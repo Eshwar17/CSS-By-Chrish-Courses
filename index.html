@@ -10,24 +10,51 @@
         margin: 0;
         padding: 0;
       }
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        height: 50vh;
+        background-color: rgb(132, 126, 126);
+        justify-content: space-around;
+        align-items: center;
+      }
       .box1 {
         background-color: blue;
         height: 232px;
         width: 232px;
-        float: left;
-
+        border: 2px solid black;
+        text-align: center;
       }
       .box2 {
         background-color: tomato;
         height: 232px;
         width: 232px;
-        float: right;
-        clear:both;
+        border: 2px solid black;
+        text-align: center;
+      }
+      .box3 {
+        background-color: rgb(64, 47, 133);
+        height: 232px;
+        width: 232px;
+        border: 2px solid black;
+        text-align: center;
+      }
+      .box4 {
+        background-color: rgb(215, 221, 45);
+        height: 232px;
+        width: 232px;
+        border: 2px solid black;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="box1">Box1</div>
-    <div class="box2">Box2</div>
+    <div class="container">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+    </div>
   </body>
 </html>
